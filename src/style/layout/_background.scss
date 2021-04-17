@@ -1,0 +1,15 @@
+.app {
+    background-color: $backgroundColor;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app__box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

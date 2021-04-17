@@ -1,0 +1,62 @@
+.post {
+    width: 25rem;
+    background-color: $white;
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid $border;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+    background-image: linear-gradient(to top, $lightGrey 0%, $lighterGrey 100%);
+
+    @include respond(phone) { 
+        width: 100%;
+    }
+}
+
+.post:hover {
+    border: 1px solid $active;
+    -webkit-box-shadow: 4px 7px 28px -1px lighten($black, 0.75);
+    -moz-box-shadow: 4px 7px 28px -1px lighten($black, 0.75);
+    box-shadow: 4px 7px 28px -1px lighten($black, 0.75);
+    bottom: 1px;
+    right: 1px;
+}
+
+.post > div:not(:last-child) {
+    margin: 0 0 20px 0;
+}
+
+.post__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post__title {
+    flex: 12;
+    word-break: break-word;
+}
+
+.post__icon {
+    fill: $red;
+    width: 2rem;
+    height: 2rem;
+    flex: 1;
+    border-radius: 100px;
+}
+
+.post__icon:hover {
+    animation: pulse 1s infinite;
+}
+
+.post__image{
+    width: 100%;
+}
+
+.post__footer {
+    align-self: flex-end;
+    font-size: 1rem;
+}

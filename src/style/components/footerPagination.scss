@@ -1,0 +1,43 @@
+.footerPagination{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerPagination__button{
+    min-width: 12rem;
+    margin: 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    color: $white;
+    -webkit-box-shadow: 4px 7px 28px -1px lighten($black, 0.75);
+    -moz-box-shadow: 4px 7px 28px -1px lighten($black, 0.75);
+    box-shadow: 4px 7px 28px -1px lighten($black, 0.75);
+}
+
+.footerPagination__button:focus {
+    outline:0;
+}
+
+.footerPagination__button--previous{
+    background-color: $redSecondary;
+}
+
+.footerPagination__button--next{
+    background-color: $active;
+}
+
+.footerPagination__button--disabled {
+    background-color: $grey;
+    cursor:unset;
+}
+
+.footerPagination__button--previous:hover{
+    background-color: darken($redSecondary, 5);
+}
+
+.footerPagination__button--next:hover{
+    background-color: darken($active, 5);
+}
